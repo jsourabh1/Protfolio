@@ -1,91 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protfolio</title>
-
-    <link rel="stylesheet" text="text/css" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- ===== CSS Files ===== -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- ====== Style Switcher ====== -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
-
-
-    <!-- main content starts-->
-
-    <div class="main-content">
-
-        <!-- home section start -->
-
-        <section class="home_section hidden">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="home-intro">
-                        <!-- <a href="">Home</a> -->
-                        <h3 class="greet">Hello, I'm </h3>
-                        <h2>Saurabh Jain</h2>
-                        <p class="designation"><span class="designation-inside"></span></p>
-
-                        <input type="submit" class="btn" value="More About Me">
-                        <input type="submit" class="btn" value="Protfolio">
-                    </div>
-
-                    <div class="home-image">
-                        <div class="img-box">
-
-                            <img src="css/Profile_photo.jpeg" alt="">
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section>
-
-
-        <section class="about_section">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="section_title">
-                        <h2>About Me</h2>
-                        
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="about-img">
-                        <div class="img-box">
-                            <img src="css/Profile_photo.jpeg" alt="">
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <p class="about_me">
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-        </section>
-
-
-
-
-
+  <!-- ===== Main Container Start ===== -->
+  <div class="main-container">
+    <!-- ===== Aside Start ===== -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>D</span>ark <span>H</span>eart</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="#education"><i class="fa fa-list"></i>Education</a></li>
+        <li><a href="#experience"><i class="fa fa-list"></i>Experience</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
     </div>
+    <!-- ===== Aside End ===== -->
+    <!-- ===== Main Content Start ===== -->
+    <div class="main-content">
+      <!-- ===== Home Section Start ===== -->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, my name is <span class="name">Saurabh Jain</span></h3>
+              <h3 class="my-profession">I' m a <span class="typing">web Developer</span></h3>
+              <p>Passionate and energetic developer with strong grasp of python programming , data structure and algorithms and having
+              experience in implementing the solutions looking to be associated with a progressive organisation which allow me to grow
+              in my career while contributing to the development of the organisation.</p>
+              <a href="#contact" class="btn hire-me">Hire Me</a>
+            </div>
+            <div class="home-img ">
+              <img src="images/Profile_photo.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Home Section End ===== -->
+      <!-- ===== About Section Start ===== -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>I'm Saurabh Jain and <span>Web Developer</span></h3>
+                  <p>I am pursuing B.Tech in computer science from Amity University I am a detail-oriented person and can juggle between tasks. I love to
+                  listen music in my spare time.I did a python content Curator internship at develncept  and I realised that the field quite excites me. I have always wanted to work with a
+                  startup owing to the learning opportunities it offers, and I believe I can bring my skills on the table for this
+                  position.</p>
+                  <h3 class="coding">Coding Profiles:</h3>
+                  <div class="coding-text">
+                    <a href="https://leetcode.com/DaRk_hEaRt/" target="__blank">Leetcode</a>
+                    <a href="https://auth.geeksforgeeks.org/user/saurabhjain17/practice/" target="__blank">GeeksForGeeks</a>
+                    <a href="https://www.codechef.com/users/saurabhj8" target="__blank" >Codechef</a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="https://drive.google.com/file/d/1TLOwhSDN8OxZsibAUHKf2wSmmujB5D1C/view?usp=sharing" target="__blank" download="Cv" class="btn">Download CV</a>
+                      <a href="#contact" class="btn hire-me">Hire Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skill-item padd-15">
+                      <h5>JS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 86%;"></div>
+                        <div class="skill-percent">86%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>Python</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 97%;"></div>
+                        <div class="skill-percent">97%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>HTML</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 96%;"></div>
+                        <div class="skill-percent">96%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item padd-15">
+                      <h5>CSS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 76%;"></div>
+                        <div class="skill-percent">76%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" id="education">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2019 - Present
+                          </h3>
+                          <h4 class="timeline-title">Amity University<span>Noida,India</span></h4>
+                          <h4 class="timeline-text">Bachelors Computer Science <span>CGPA: 8.45</span></h4>
+                          
+                        </div>
+                             <!-- ===== timeline item ===== -->
+                             <div class="timeline-item">
+                              <div class="circle-dot"></div>
+                              <h3 class="timeline-date">
+                                <i class="fa fa-calendar"></i> 2017 - 2019
+                              </h3>
+                              <h4 class="timeline-title">Indus Public School<span>Jind,India</span></h4>
+                              <h4 class="timeline-text">Higher Secondary School<span>Percentage: 95.4%</span></h4>
+                            </div>
+                                 <!-- ===== timeline item ===== -->
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        
+                             <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> July 2021 - August 2021
+                          </h3>
+                          <h4 class="timeline-title">Develncept<span>Python Content Curator</span></h4>
+                          <p class="timeline-text">• Created content of python. Learned about various libraries of python like python text to speech and
+                          Matplotlib etc.<br>
+                          • Learned about the Github working and how to write a attractive technical content..</p>
+                        </div>
+                                 <!-- ===== timeline item ===== -->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> February 2021 - June 2021
+                          </h3>
+                          <h4 class="timeline-title">Chegg<span>Managed Network Expert</span></h4>
+                          <p class="timeline-text">• Helping students pursuing their under graduation (i.e. bachelors) and Masters (MS) in USA, by
+                          authoring/providing solutions to their Assignments and other Queries/Questions (online), related with
+                          Computer Science Subject.<br>
+                          • Able Improve my problem solving skill</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== About Section End ===== -->
+      <!-- ===== Services Section Start ===== -->
     
+      <!-- ===== Services Section End ===== -->
+      <!-- ===== Portfolio Section Start ===== -->
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Last Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ====== portfolio item start ====== -->
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/photo_1.jpeg" alt="">
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium enim, saepe in officiis aliquid commodi, fuga animi, explicabo corrupti necessitatibus. Obcaecati blanditiis ducimus maiores eum doloremque dolorum sunt laboriosam.</p> -->
+                </div>
+              </div>
+                <a href="https://jsourabh1.github.io/Tourism_site/" target="__blank"  class="btn">View</a>
+
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/photo_2.jpeg" alt="">
+                  <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae aliquam vel ullam natus, ducimus veniam quam laborum provident voluptas commodi, velit maxime ipsam optio id suscipit similique autem fugiat vitae.</p> -->
+                </div>
+              </div>
+                <a href="https://jsourabh1.github.io/Simple_protfolio_Template/" target="_blank" class="btn">View</a>
+
+            </div>
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/Photo_3.jpeg" alt="">
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptate quae natus explicabo hic autem officia dignissimos est quis, perspiciatis consequuntur eos minus ipsam aliquid impedit nesciunt, fugit et non? -->
+                  </p>
+                </div>
+              </div>
+                <a href="https://jsourabh1.github.io/Music-Player/"target="__blank" class="btn">View</a>
+
+            </div>
+
+            <!-- ====== portfolio item End ====== -->
+             <!-- ====== portfolio item start ====== -->
+             <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/photo_4.jpeg" alt="">
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reprehenderit architecto quis dolore consequuntur! Magni praesentium molestiae pariatur quos minima quidem eius iusto, et totam soluta incidunt ex recusandae corporis.</p> -->
+                </div>
+              </div>
+                <a href="https://jsourabh1.github.io/Visit_India/" target="__blank" class="btn">View</a>
+
+            </div>
+            <!-- ====== portfolio item End ====== -->
+
+            <div class="portfolio-item padd-15">
+              <div class="portfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="images/portfolio/photo_5.jpeg"    alt="">
+                  
+                </div>
+              
+              </div>
+                <a href="https://github.com/jsourabh1/Air-Canvas" target="__blank" class="btn">View</a>
+
+            </div>
+            
+           
+          </div>
+        </div>
+      </section>
+      <!-- ===== Portfolio Section End ===== -->
+      <!-- ===== Contact Section Start ===== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Have You Any Questions ?</h3>      
+        
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+          <!-- ====== Contact Form ====== -->
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id="message"  placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" class="btn" onclick="sendEmail()">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Contact Section End ===== -->
+    </div>
+    <!-- ===== Main Content End ===== -->
+  </div>
+  <!-- ===== Main Container End ===== -->
+  <!-- ===== Style Switcher Start ===== -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas "></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ===== Style Switcher End ===== -->
+  <!-- ===== JS Files ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
 </body>
 </html>
