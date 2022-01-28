@@ -384,6 +384,11 @@ h3.my-profession
     
 }
 
+.about .about-content .about-text .coding-text{
+
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .about .about-content .personal-info
